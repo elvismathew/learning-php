@@ -23,14 +23,16 @@ echo "Average temperature is: ". $avg_temp;
 //sort temperature array in ascending order
 sort($temp_arr);
 
+echo "</br>";
+echo "The list of the five lowest temperature is: ";
 //the lowest temperature
 for($i=0; $i<5; $i++){
-  
+    echo $temp_arr[$i] . ",";
 }
-echo "The list of the five lowest temperature is: " .  $temp_arr[$i] . ",";
 
+echo "</br>";
+echo "The list of five highest temperature is:";
 //the highest temperature
 for($i = ($temp_count - 5); $i < $temp_count; $i++ ){
-   
+  echo  $temp_arr[$i] . ","; 
 }
-echo "The list of five highest temperature is:" . $temp_arr[$i] . ",";
